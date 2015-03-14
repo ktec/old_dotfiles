@@ -19,7 +19,7 @@ compinit
 stty start undef
 stty stop undef
 
-# RVM 
+# RVM
 [[ -s "/Users/ben/.rvm/scripts/rvm" ]] && source "/Users/ben/.rvm/scripts/rvm"
 
 # Sourcing of other files
@@ -32,3 +32,6 @@ source $HOME/.dotfiles/zsh/z
 export PATH=$PATH:~/.cabal/bin
 
 export PATH=$PATH:bin:~/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.rvm/bin
+
+# set up boxen
+[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh 
